@@ -142,7 +142,7 @@ The plugin requires a few things:
 * Kubelet should also be run with the `--non-masquerade-cidr=<clusterCidr>` argument to ensure traffic to IPs outside this range will use IP masquerade.
 * The node must be assigned an IP subnet through either the `--pod-cidr` kubelet command-line option or the `--allocate-node-cidrs=true --cluster-cidr=<cidr>` controller-manager command-line options.
 
-### Customizing the MTU (with kubenet)
+# Customizing the MTU (with kubenet)
 
 The MTU should always be configured correctly to get the best networking performance.  Network plugins will usually try
 to infer a sensible MTU, but sometimes the logic will not result in an optimal MTU.  For example, if the
